@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Correct Flowise API URL
 FLOWISE_API_URL = "https://raoulbia-cybc.hf.space/api/v1/prediction/d2c3c7dc-dc96-4501-9b5b-6d79db4fcaaf"
-TELEGRAM_BOT_TOKEN = '7130057074:AAFzrP1UIHsKyEzxH430d6cigYLNJXeZTp0'
+TELEGRAM_BOT_TOKEN = ''
 TELEGRAM_API_URL = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
 
 # Configure logging
