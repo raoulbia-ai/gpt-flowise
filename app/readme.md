@@ -4,12 +4,15 @@ Application (client) ID (see Overview pane) > value
 
 docker_push_sp_secret > value
 
+docker build -t your-azure-container-registry-name/your-image-name .
+docker build -t cybcai.azurecr.io/cybc_ai_app .
+
 docker tag cybc_ai_app:latest cybcai.azurecr.io/cybc_ai_app:latest
 docker push cybcai.azurecr.io/cybc_ai_app:latest
 
 Authentication
 
-`docker login cybcai.azurecr.io --username <username> --password <password>`
+`docker login cybcai.azurecr.io --username <username> --password-stdin <password>`
 
 Replace <username> with your Azure Container Registry username, and <password> with your Azure Container Registry password.
 
